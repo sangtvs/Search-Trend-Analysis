@@ -20,10 +20,15 @@ Phân tích xu hướng tìm kiếm công thức nấu ăn năm 2024 từ Google
    git clone <repository-url>
    cd <repository-name>
 2. **Chạy hệ thống Docker**:
+   ```
     docker-compose up --build -d
-3. **Tạo và streaming dữ liệu (nếu cần)**:
+4. **Tạo và streaming dữ liệu (nếu cần)**:
+   ```
     docker-compose run python-app python jupyter_code/producer_2024.py
-4. **Phân tích dữ liệu**:
+6. **Phân tích dữ liệu**:
+   
     Mở http://localhost:8888, dùng token từ:
+      ```
         docker-compose logs jupyter
+      ```
     Mở notebooks/analysis_2024.ipynb và chạy.
